@@ -1,6 +1,7 @@
 import { useState } from "react";
 import type { LeaveRequest } from "../types/leave";
 import { useRouter } from "next/router";
+
 export default function LeaveRequestForm() {
   const [formData, setFormData] = useState<LeaveRequest>({
     fullName: "",
@@ -82,9 +83,9 @@ export default function LeaveRequestForm() {
 
 
   return (
-<div className="max-w-3xl mx-auto p-8 bg-white rounded-xl shadow-lg flex flex-col items-center justify-center text-gray-800">
+<div className="max-w-xl mx-auto p-8 py bg-white rounded-xl shadow-lg flex flex-col items-center justify-center text-gray-800">
   <h2 className="text-2xl font-extrabold mb-8 text-center text-blue-900">ฟอร์มขออนุญาตลาหยุด</h2>
-  <form onSubmit={handleSubmit} className="space-y-6 w-full">
+  <form onSubmit={handleSubmit} className="space-y-2 w-full">
     <div>
       <label className="block text-lg font-medium mb-2">ชื่อ - นามสกุล</label>
       <input
@@ -189,7 +190,7 @@ export default function LeaveRequestForm() {
 
     <button
       type="submit"
-      className="w-full bg-green-600 text-white font-semibold py-3 rounded-lg hover:bg-blue-700 transition duration-200"
+      className="w-full mt-4 bg-green-600 text-white font-semibold py-3 rounded-lg hover:bg-blue-700 transition duration-200"
     >
       ส่งคำขอ
     </button>

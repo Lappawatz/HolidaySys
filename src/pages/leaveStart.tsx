@@ -22,8 +22,7 @@ const kanit = Kanit({
 export default function Home() {
   return (
     <div className={`${kanit.variable} font-sans`}>
-    {/* <div className={`${geistSans.variable} ${geistMono.variable} font-sans`}> */}
-      <div className="flex flex-col items-center justify-center min-h-screen bg-blue-950">
+      <div className="py-20 min-h-screen bg-gradient-to-br from-slate-50 to-slate-100 dark:from-slate-900 dark:to-slate-800 ">
           <LeaveRequestForm />
       </div>
     </div>
